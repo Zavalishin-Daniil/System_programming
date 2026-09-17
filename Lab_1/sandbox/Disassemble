@@ -1,0 +1,40 @@
+ Zavalishin (asm)
+Dump of assembler code for function _start:
+   0x08049000 <+0>:	mov    eax,0x4
+   0x08049005 <+5>:	mov    ebx,0x1
+   0x0804900a <+10>:	mov    ecx,0x804a000
+   0x0804900f <+15>:	mov    edx,0x13
+   0x08049014 <+20>:	int    0x80
+   0x08049016 <+22>:	mov    eax,0x4
+   0x0804901b <+27>:	mov    ebx,0x1
+   0x08049020 <+32>:	mov    ecx,0x804a013
+   0x08049025 <+37>:	mov    edx,0xd
+   0x0804902a <+42>:	int    0x80
+   0x0804902c <+44>:	mov    eax,0x4
+   0x08049031 <+49>:	mov    ebx,0x1
+   0x08049036 <+54>:	mov    ecx,0x804a020
+   0x0804903b <+59>:	mov    edx,0x15
+   0x08049040 <+64>:	int    0x80
+   0x08049042 <+66>:	mov    eax,0x1
+   0x08049047 <+71>:	xor    ebx,ebx
+   0x08049049 <+73>:	int    0x80
+End of assembler dump.
+
+C_version (C)
+Dump of assembler code for function main:
+   0x0000000000001149 <+0>:	endbr64
+   0x000000000000114d <+4>:	push   rbp
+   0x000000000000114e <+5>:	mov    rbp,rsp
+   0x0000000000001151 <+8>:	lea    rax,[rip+0xeac]        # 0x2004
+   0x0000000000001158 <+15>:	mov    rdi,rax
+   0x000000000000115b <+18>:	call   0x1050 <puts@plt>
+   0x0000000000001160 <+23>:	lea    rax,[rip+0xeb0]        # 0x2017
+   0x0000000000001167 <+30>:	mov    rdi,rax
+   0x000000000000116a <+33>:	call   0x1050 <puts@plt>
+   0x000000000000116f <+38>:	lea    rax,[rip+0xeae]        # 0x2024
+   0x0000000000001176 <+45>:	mov    rdi,rax
+   0x0000000000001179 <+48>:	call   0x1050 <puts@plt>
+   0x000000000000117e <+53>:	mov    eax,0x0
+   0x0000000000001183 <+58>:	pop    rbp
+   0x0000000000001184 <+59>:	ret
+End of assembler dump.

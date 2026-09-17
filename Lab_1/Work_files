@@ -1,0 +1,23 @@
+chmod 762 Work/"Лабораторная работа №1!"
+touch Work/"Text @1" Work/"Text \$2" Work/"Text #3"
+printf 'Птица говорун отличается умом и сообразительностью!\nОтличается умом, отличается сообразительностью...\n' > Work/"Text @1"
+cp Work/"Text @1" Work/"Text \$2"
+mv Work/"Text \$2" Work/"Лабораторная работа №1!"
+cp Work/"Text @1" Work/"ФИО"/
+cd Work
+gzip "Text @1" "Text #3"
+cd ..
+tar -cvf Work/MyAchiv.tar -C Work "Text @1.gz" "Text #3.gz"
+cd Work
+gunzip "Text \#3.gz"
+cd ..
+head -n 1 Work/"Text @1.gz" 2>/dev/null
+zcat Work/"Text @1.gz" | head -n 1 >> Work/"Text #3"
+echo 'Будь осторожен! Преступник вооружен!' >> Work/"Text #3"
+zcat Work/"Text @1.gz" | tac > Work/"ФИО"/Result_one
+mv Work/"ФИО"/Result_one Work/"ФИО"/Result_two
+ls -la Work/"ФИО"/T* > Work/"Лабораторная работа №1!"/Result_3
+uname -a >> Work/"Лабораторная работа №1!"/Result_3
+date >> Work/"Лабораторная работа №1!"/Result_3
+chmod 200 Work/"ФИО"
+chmod 700 Work/"ФИО"
